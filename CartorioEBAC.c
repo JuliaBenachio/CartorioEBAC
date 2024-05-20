@@ -139,7 +139,8 @@ int main()
 		printf("Selecione como deseja prosseguir: \n\n");
 		printf("\t1 - Adicionar um nome\n");
 		printf("\t2 - Consultar um nome\n");
-		printf("\t3 - Deletar um nome\n\n\n");
+		printf("\t3 - Deletar um nome\n");
+		printf("\t4 - Sair do sistema.\n\n\n");
 		printf("Resposta: "); //Última opção e fim do menu interativo
 	
 		scanf("%d", &opcao); //Armazenar a informação inserida pelo usuário na variável
@@ -160,6 +161,11 @@ int main()
 			case 3: //Condição
 			deletar(); //Chamada de função 
 			break; //Quebra de função
+			
+			case 4:
+			printf("Obrigado por utilizar nosso sistema! Até breve!");
+			return 0;
+			break;
 			
 			default: //Condição e/ou término do código de repetição
 			printf("Essa opção não está disponível! Volte ao menu.\n"); //Informação de informação inexistente
